@@ -12,13 +12,18 @@ public class BasePage {
     
     public BasePage() {
 
+     String
+chromedriverPath = "src/main/resources/chromedriver.exe";        
+    // Set the system property
+        System.setProperty("webdriver.chrome.driver", chromedriverPath);
+
         // Construct the path to Chromedriver executable
 
-        String chromeDriverPath = System.getProperty("user.dir") + "/src/main/resources/chromedriver.exe";
+        // String chromeDriverPath = System.getProperty("/src/main/resources/chromedriver.exe");
  
-        // Set Chromedriver path
+        // // Set Chromedriver path
 
-        System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+        // System.setProperty("webdriver.chrome.driver", chromeDriverPath);
  
         // Initialize ChromeDriver
 
