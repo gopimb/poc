@@ -13,7 +13,7 @@ public class BasePage {
     public BasePage() {
 
      String
-chromedriverPath = "src/main/resources/chromedriver.exe";        
+chromedriverPath = "/var/lib/jenkins/workspace/POC/src/main/resources/chromedriver.exe";        
     // Set the system property
         System.setProperty("webdriver.chrome.driver", chromedriverPath);
 
