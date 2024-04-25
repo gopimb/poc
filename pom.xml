@@ -17,11 +17,17 @@
           <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-surefire-plugin</artifactId>
-  <artifactId>maven-failsafe-plugin</artifactId>
-<!--   <version>2.22.0</version> -->
+  <!--   <version>2.22.0</version> -->
 </plugin>
         </plugins>
     </build>
+  <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <!-- I don't specify version at all (Spring Boot can autoconfigure plugin version) -->
+        </plugin>
+</plugins>
   <groupId>Landmark</groupId>
   <artifactId>poc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
